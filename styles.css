@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+
+#left_side {
+    position: relative;
+    width: 33%;
+    height: 100%;
+}
+
+#background {
+    width: 33vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+#shadow {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    justify-content: center;
+    top: 30vh;
+    height: 20vh;
+    width: 33vw;
+    opacity: 0.7;
+    background-color: black;
+}
+
+#odin_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vw;
+    height: 20vh;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url("norse-bold-webfont.woff") format("woff");
+}
+
+#odin {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-left: 1vw;
+    font-size: 6rem;
+    font-family: Norse-Bold;
+    opacity: 1;
+}
+
+#img_source {
+    position: fixed;
+    width: 20vw;
+    bottom: 1vw;
+    left: 6.5vw;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.right-side {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 67vw;
+    height: 100vw;
+}
+
+#first-box {
+    height: 37vh;
+    width: 66vw;
+    position: relative;
+    right: 0;
+    top: 0;
+    display: flex;
+}
+
+#top_text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 2vw;
+    height: 100%;
+    width: auto;
+    font-size: 1rem;
+    gap: 5vh;
+}
+
+#second-box {
+    position: relative;
+    height: 26vh;
+    width: 66vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#top_middle_text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 2vw;
+    font-size: 1rem;
+    position: relative;
+}
+
+#textbox_rows {
+    position: relative;
+    margin-left: 2vw;
+}
+
+label, input {
+    display: block;
+}
+
+#column1 {
+    float: left;
+    margin-right: 20px;
+}
+
+#column2 {
+    float: right;
+}
+
+br {
+    clear: both;
+}
+
+form {
+    width: 33vw;
+    display: flex;
+    
+}
+
+#third-box {
+    height: 37vh;
+    width: 66vw;
+}
