@@ -85,7 +85,7 @@ html, body{
 }
 
 #first-box {
-    height: 37vh;
+    height: 30vh;
     width: 66vw;
     position: relative;
     right: 0;
@@ -108,7 +108,7 @@ html, body{
 
 #second-box {
     position: relative;
-    height: 26vh;
+    height: 40vh;
     width: 66vw;
     display: flex;
     flex-direction: column;
@@ -124,20 +124,19 @@ html, body{
 }
 
 #textbox_rows {
-    position: relative;
     margin-left: 2vw;
 }
 
 label, input {
     display: block;
+    margin-bottom: 10px;
 }
 
-#column1 {
+.column1 {
     float: left;
-    margin-right: 20px;
 }
 
-#column2 {
+.column2 {
     float: right;
 }
 
@@ -145,9 +144,11 @@ br {
     clear: both;
 }
 
+
 form {
     width: 33vw;
-    display: flex;
+    height: 100%;
+    margin-top: 50px;
     
 }
 
