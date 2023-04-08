@@ -125,12 +125,32 @@ html, body{
 
 #textbox_rows {
     margin-left: 2vw;
-    position: relative;
+    width: 33vw;
 }
 
 label, input {
     display: block;
+}
+
+label {
+    font-size: 0.5rem;
+}
+
+input {
+    border-color: #E5E7EB;
+    border-radius: 5px;
     margin-bottom: 10px;
+    border-width: 1px;
+}
+
+input:focus {
+    border-color: blue;
+    border-width: 1px;
+    box-shadow: 3px 3px 3px black;
+}
+
+.error {
+    border-color: red;
 }
 
 .column1 {
@@ -146,17 +166,17 @@ br {
 }
 
 form {
-    width: 33vw;
+    width: clamp(500px, 33vw, 700px);
     height: 100%;
     margin-top: 50px;
     
 }
 
 #third_box {
-    height: max(30vh, 100px);
+    height: clamp(200px, 33vh, 400px);
     width: 66vw;
     position: relative;
-    bottom: 0px;
+    bottom: 0;
 }
 
 #button_end_text {
@@ -167,8 +187,22 @@ form {
     gap: 2vw;
 }
 
+button {
+    background-color: #596D48;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+}
+
 #end_text {
     display: flex;
     margin-top: 2vw;
     margin-left: 2vw;
 }
+
+#log_in {
+    color: #596D48;
+}
+
+
