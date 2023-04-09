@@ -5,70 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-
-    <div id="left_side">
-        <img src="leaves.avif" alt="Ferns" id="background">
-        <div id="shadow">
-            <img src="odin-lined.png" alt="Odin Project Logo" id="odin_logo">
-            <div id="odin">ODIN</div>
-        </div>
-        <div id="img_source">Photo by&nbsp;<div src="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West&nbsp;</div>on&nbsp;<div src="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</div></div>
-    </div>
-
-    <div class="right-side">
-
-        <div id="first-box">
-            <div id="top_text">
-                <div id="top_paragraph"><strong>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now&nbsp;</em> to get started.</strong></div>
-                <div id="under_top_p"><strong>You <em>know</em> you want to.</strong></div>
-            </div>
-        </div>
-
-        <div id="second-box">
-
-            <div id="top_middle_text"><b>Let's do this!</b></div>
-
-            <div id="textbox_rows">
-                <form action="/action_page.php" id="sign_up">
-                <div class="column1">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" id="firstname" name="firstname" class="column1">
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" class="error">
-                </div>
-                <div class="column2">
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" id="lastname" name="lastname" class="column2">
-                    <label for="phonenum">PHONE NUMBER</label>
-                    <input type="text" id="phonenum" name="phonenum">
-                    <label for="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm_password" name="confirm_password" class="error">
-                </div>
-                
-                </form>
-            </div>
-        </div>
-
+    <div class="wrapper">
         
-        <div id="third_box">
-            
-            <div id="button_end_text">
-                <button type="submit" form="sign_up"><b>Create Account</b></button>
+        <div id="left_side">
+            <img src="leaves.avif" alt="Ferns" id="background">
+            <div id="shadow">
+                <img src="odin-lined.png" alt="Odin Project Logo" id="odin_logo">
+                <div id="odin">ODIN</div>
+            </div>
+            <div id="img_source">Photo by&nbsp;<a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West&nbsp;<a>on&nbsp;<a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+        </div>
+    
+        <div class="right_side">
+
+            <div id="first_box">
+                <div id="top_text">
+                    <div id="top_paragraph"><strong>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now&nbsp;</em> to get started.</strong></div>
+                    <div id="under_top_p"><strong>You <em>know</em> you want to.</strong></div>
+                </div>
             </div>
 
-                <div id="end_text">
-                    <div id="already_acc">Already have an account?&nbsp;</div><div id="log_in">Log in.</div>
+            <div id="second_box">
+
+                <div id="top_middle_text"><b>Let's do this!</b></div>
+
+                <div id="textbox_rows">
+                    <form action="javascript:," onsubmit="formReset()" id="sign_up">
+                    <div class="column1">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name" class="column1">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" class="error" onkeyup="passwordCheck();">
+                    </div>
+                    <div class="column2">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name" class="column2">
+                        <label for="phone_num">PHONE NUMBER</label>
+                        <input type="text" id="phone_num" name="phone_num">
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_password" name="confirm_password" class="error" onkeyup="passwordCheck();">
+                    </div>
+                    
+                    </form>
+                </div>
+            </div>
+
+            
+            <div id="third_box">
+                
+                <div id="button_end_text">
+                    <button type="submit" form="sign_up"><b>Create Account</b></button>
                 </div>
 
+                    <div id="end_text">
+                        <div id="already_acc">Already have an account?&nbsp;</div><div id="log_in">Log in.</div>
+                    </div>
+
+            </div>
+
+
+
         </div>
-
-
-
     </div>
 </body>
 </html>
